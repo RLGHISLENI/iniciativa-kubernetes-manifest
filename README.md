@@ -15,66 +15,7 @@ Desenvolvimento de exemplos práticos utilizando imagem docker orquestrada por u
 
 ## Instalação de pré requisitos
 
-Para este desafio utilizaremos o **k3d** para criação de nosso cluster kubernetes e o **kubectl** para criação de pods, replicasets, services e deployments.
-
-Primiero vamos instalar o **asdf** para podermos controlar todas as versões de pacotes instalados em nossa distribuição linux, permitindo a coexistência de mais de uma versão da mesma ferramenta em nosso sistema operacional.
-
-### **Instalando o asdf**
-
-Abra o terminal na pasta raiz do seu usuário e clone o repositório do asdf
-
-```zsh
-git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.9.0
-```
-
-Abra e edite o arquivo `.bashrc` como permissão de administrador utilizando o editor `nano`
-
-```zsh
-sudo nano ~/.bashrc
-```
-
-Adicione a instrução abaixo na última linha do arquivo, salve e feche
-
-```zsh
-. $HOME/.asdf/asdf.sh
-```
-
-Execute o comando abaixo para validar a instalação do asdf
-
-```zsh
-asdf info
-```
-
-Caso não funcione, reinicie seu terminal e tente novamente.
-
-### **Instalando o k3d e kubectl**
-
-Após a instalação do asdf, abra o terminal e execute a lista de comandos abaixo:
-
-**k3d:**
-```zsh
-asdf plugin-add k3d && asdf install k3d latest && asdf global k3d latest
-```
-
-**kubectl:**
-```zsh
-asdf plugin-add kubectl && asdf install kubectl latest && asdf global kubectl latest
-```
-
-Estes comandos combinados irão realizar a **adição do plugin** k3d/kubectl ao controlador asdf, **intalação** no sistema operacional e definição do escopo de utilizaçõa da **última versão como Global**
-
-Para validar a ação do asdf, utilize o comando descrito abaixo
-
-```zsh
-asdf list
-```
-
-ou
-
-```zsh
-asdf current
-``` 
-Deverá retornar a lista de ferramentas instaladas e suas versões.
+Primeiro certifique-se de ter os [pré requisitos](https://github.com/RLGHISLENI/rotten-potatoes) instalados e configurados em sua máquina.
 
 ## Iniciar o Docker na estação
 
