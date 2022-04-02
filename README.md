@@ -95,10 +95,10 @@ sudo service docker start
 Utilizando k3d crie um cluster kubernetes conforme o código abaixo:
 
 ```zsh
-k3d cluster create meucluster --agents 1 --servers 1 -p "8080:30000@loadbalancer"
+k3d cluster create meucluster --agents 1 --servers 1
 ```
 
-Navegue até a pasta `k8s` do projeto e usando o `kubectl` execute o manifesto de deployment
+Usando o `kubectl` execute o manifesto de deployment
 
 ```zsh
 kubectl apply -f deployment.yaml
