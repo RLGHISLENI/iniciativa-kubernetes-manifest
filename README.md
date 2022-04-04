@@ -107,3 +107,7 @@ kubectl get pods --namespace kube-system
 ```
 
 > Para acessar sua aplicação que estrará no ar utilizando todo o poder dos containers docker e sendo orquestrada pelo kubernetes, abra o navegador de sua preferência na url _**http://localhost:8080/**_ e o projeto será apresentado.
+
+## Referências
+
+- [Meu Registry Server - DockerHub](https://hub.docker.com/u/rlghisleni)
